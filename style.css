@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+    font-family: 'Courier New', Courier, monospace;
+}
+
+canvas {
+    display: block;
+    cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' width='28' height='28' viewBox='0 0 28 2' stroke='white'%3e%3cpath transform='rotate(110, 12, 12)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z' /%3e%3c/svg%3e") 6 1, crosshair;
+    max-width: calc(100vmin - 4rem);
+    max-height: calc(100vmin - 4rem);
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#d3 svg {
+    max-width: calc(100vmin - 4rem);
+    fill: #2a2a2a;
+}
+
+#d3 svg rect {
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke: #2a2a2a;
+}

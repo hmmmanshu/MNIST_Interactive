@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +10,7 @@ body {
     display: grid;
     place-items: center;
     background: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 canvas {

@@ -5,18 +5,18 @@
         let touchTime = Date.now()
         let drawCanvas
         let finalCanvas
-        const displaySize = 500
+        const displaySize = 600
         let scaleFactor = 1
         let reevaluate = true
 
         p.setup = () => {
             p.createCanvas(displaySize, displaySize)
-            p.strokeWeight(1)
+            p.strokeWeight(0)
             p.stroke(220)
             drawCanvas = p.createGraphics(28, 28, 'p2d')
             scaleFactor = (28 / displaySize)
             drawCanvas.noSmooth()
-            drawCanvas.pixelDensity(1)
+            drawCanvas.pixelDensity(100)
             drawCanvas.strokeWeight(1.6)
             drawCanvas.stroke(255)
             finalCanvas = p.createGraphics(28, 28)

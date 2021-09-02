@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization</title>
+
+    <meta name="description" content="Model Viz">
+    <link rel='icon' href='../../assets/img/common/logo.ico' type=‘image/x-ico’>
+    <meta name="viewport" content="width = device-width, initial-scale =1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <script src="../../assets/jslib/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/csslib/bootstrap.min.css">
+    <script src="../../assets/jslib/bootstrap.min.js"></script>
+    <script src="../../assets/jslib/three.min.js"></script>
+    <script src="../../assets/jslib/tween.min.js"></script>
+    <script src="../../assets/jslib/tf.min.js"></script>
+    <script src="../../assets/jslib/TrackballControls.js"></script>
+    <script src="../../assets/jslib/stats.min.js"></script>
+    <script src="../../assets/jslib/tensorspace.min.js"></script>
+    <script src="../../assets/jslib/signature_pad.min.js"></script>
+
+    <link rel="stylesheet" href="../../assets/csslib/material.fonts.css">
+    <link rel="stylesheet" href="../../assets/csslib/material.min.css">
+    <script src="../../assets/jslib/material.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/playground.css">
+    <link rel="stylesheet" href="../../css/playgroundLenet.css">
+
+    <script src="../../js/playground.js"></script>
+    <script src="../../js/mode2.js"></script>
+
+</head>
+
+<body>
+    <div id="curtain"></div>
+    <main>
+
+        <div id="modelArea"></div>
+        <div id="controlPanel">
+
+            <div class="panelTitle">Panel</div>
+            <div class="wrapper">
+                <canvas id="signature-pad" class="signature-pad" width=224 height=224></canvas>
+            </div>
+
+            <button id="clear" class="controlButton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            <i class="material-icons">clear</i>Clear
+        </button>
+
+            <button id="resetTrigger" class="controlButton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            <i class="material-icons">replay</i>Reset
+        </button>
+
+            <p id="hint">Prediction</p>
+
+            <div class="inferences">
+                <span id="result0">0</span>
+                <span id="result1">1</span>
+                <span id="result2">2</span>
+                <span id="result3">3</span>
+                <span id="result4">4</span>
+            </div>
+            <div class="inferences">
+                <span id="result5">5</span>
+                <span id="result6">6</span>
+                <span id="result7">7</span>
+                <span id="result8">8</span>
+                <span id="result9">9</span>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -23,7 +23,6 @@ $(function() {
     signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
 
         minWidth: 10,
-        backgroundColor: 'rgba(255, 255, 255, 0)',
         penColor: 'rgb(214, 253, 255)',
         onEnd: executePredict
 
@@ -38,12 +37,12 @@ function createModel() {
         animeTime: 200,
     });
 
-    model.add(new TSP.layers.GreyscaleInput());
-    model.add(new TSP.layers.Padding2d());
-    model.add(new TSP.layers.Conv2d());
-    model.add(new TSP.layers.Pooling2d());
-    model.add(new TSP.layers.Conv2d());
-    model.add(new TSP.layers.Pooling2d());
+    model.add(new TSP.layers.GreyscaleInput({ color: '#f4d9ff' }));
+    model.add(new TSP.layers.Padding2d({ color: '#ed87ff' }));
+    model.add(new TSP.layers.Conv2d({ color: '#00f2ee' }));
+    model.add(new TSP.layers.Pooling2d({ color: '#f291bd' }));
+    model.add(new TSP.layers.Conv2d({ color: '#00f2ee' }));
+    model.add(new TSP.layers.Pooling2d({ color: '#f291bd' }));
     model.add(new TSP.layers.Dense());
     model.add(new TSP.layers.Dense());
     model.add(new TSP.layers.Output1d({

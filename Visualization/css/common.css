@@ -43,14 +43,16 @@
     src: url('https://tensorspace.org/fonts/PingFang-SC-Bold.ttf');
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
 
-a, a:hover {
+a,
+a:hover {
     color: #0340D8;
 }
 
@@ -68,12 +70,10 @@ body {
 }
 
 .span_code {
-
     font-family: SourceSansPro-Regular, sans-serif;
-
 }
 
-body > nav {
+body>nav {
     left: 0;
     top: 0;
     height: 60px;
@@ -89,10 +89,8 @@ body > nav {
     z-index: 10;
 }
 
-body > nav > div {
-
+body>nav>div {
     height: 100%;
-
 }
 
 #logo {
@@ -101,21 +99,19 @@ body > nav > div {
     cursor: pointer;
 }
 
-#logo > a {
+#logo>a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
 
-#logo > a > img {
-
+#logo>a>img {
     height: 70%;
     margin-top: 4%;
     float: left;
 }
 
-#logo > a > div {
-
+#logo>a>div {
     font-size: 25px;
     line-height: 60px;
     float: left;
@@ -123,11 +119,9 @@ body > nav > div {
     font-family: SourceSansPro-Bold, sans-serif;
     font-weight: bold;
     color: #4d4d4d;
-
 }
 
-body > nav  > div > ul {
-
+body>nav>div>ul {
     height: 40px;
     width: auto;
     display: block;
@@ -136,10 +130,9 @@ body > nav  > div > ul {
     float: left;
     font-size: 16px;
     margin-top: 10px;
-
 }
 
-body > nav  > div > ul > li {
+body>nav>div>ul>li {
     height: 100%;
     width: auto;
     float: left;
@@ -151,7 +144,7 @@ body > nav  > div > ul > li {
     box-sizing: border-box;
 }
 
-body > nav  > div > ul > li > a {
+body>nav>div>ul>li>a {
     float: left;
     height: 100%;
     width: 100%;
@@ -160,43 +153,35 @@ body > nav  > div > ul > li > a {
     transition-duration: 0.3s;
 }
 
-body > nav > div > ul > li:hover {
-
+body>nav>div>ul>li:hover {
     border-bottom: 3px solid #0340D8;
 }
 
-body > nav > div > ul > li:hover > a {
-
+body>nav>div>ul>li:hover>a {
     font-weight: bold;
     color: #0340D8;
 }
 
 .now {
-
     border-bottom: 3px solid #0340D8;
-
 }
 
-.now > a {
-
+.now>a {
     color: #0340D8;
     font-weight: bold;
-
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
     float: none;
 }
 
 #more {
-
     position: absolute;
     top: 0;
     right: 20px;
     border-bottom: 0;
     cursor: pointer;
     display: none;
-
 }
 
 #more li {
@@ -207,7 +192,6 @@ body > nav > div > ul > li:hover > a {
 }
 
 #more li a {
-
     color: #0340D8;
 }
 
@@ -226,7 +210,6 @@ body > nav > div > ul > li:hover > a {
 }
 
 #nav-collapse li {
-
     background-color: #fff;
     border-top: 1px solid #ddd;
 }
@@ -246,7 +229,7 @@ body > nav > div > ul > li:hover > a {
     font-size: 14px;
 }
 
-.language > div {
+.language>div {
     width: 50%;
     height: 100%;
     float: left;
@@ -254,7 +237,7 @@ body > nav > div > ul > li:hover > a {
     cursor: pointer;
 }
 
-.language > div > div {
+.language>div>div {
     height: 25px;
     width: 30px;
     line-height: 20px;
@@ -262,28 +245,28 @@ body > nav > div > ul > li:hover > a {
     margin-left: 10px;
 }
 
-.language > div:hover > div {
+.language>div:hover>div {
     border-bottom: 2px solid #0340D8;
 }
 
-.language > div.selected > div {
+.language>div.selected>div {
     border-bottom: 2px solid #0340D8;
     cursor: default;
     color: #0340D8;
 }
 
-.language > div:first-child {
+.language>div:first-child {
     border-right: 1px solid #808080;
 }
 
-.language > div > div > a {
+.language>div>div>a {
     color: #808080;
     text-decoration: none;
     display: inline-block;
     width: 100%;
 }
 
-.language > div > div:hover > a {
+.language>div>div:hover>a {
     color: #0340D8;
 }
 
@@ -304,73 +287,66 @@ pre {
 }
 
 .github-corner svg {
-
-    height: 108px;
-    width: 108px;
-    fill:#0340D8;
-    color:#fff;
-    position: absolute;
-    top: 0;
-    border: 0;
-    right: 0;
-
-}
-
-.github-corner-index svg {
-
     height: 108px;
     width: 108px;
     fill: #0340D8;
-    color:#fff;
+    color: #fff;
     position: absolute;
     top: 0;
     border: 0;
     right: 0;
+}
 
+.github-corner-index svg {
+    height: 108px;
+    width: 108px;
+    fill: #0340D8;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
 }
 
 .github-corner-playground svg {
-
     height: 108px;
     width: 108px;
     fill: #548CA9;
-    color:#fff;
+    color: #fff;
     position: absolute;
     top: 0;
     border: 0;
     right: 0;
-
 }
 
 @keyframes octocat-wave {
-    0%, 100% {
+    0%,
+    100% {
         transform: rotate(0)
     }
-    20%, 60% {
+    20%,
+    60% {
         transform: rotate(-25deg)
     }
-    40%, 80% {
+    40%,
+    80% {
         transform: rotate(10deg)
     }
 }
 
 @media (max-width: 1000px) {
-
     #largeNav {
         display: none;
     }
-
     #more {
         display: block;
     }
-
 }
 
 @media (max-width: 820px) {
     .language {
         right: 70px;
     }
-
     footer {
         font-size: 14px;
     }
@@ -380,23 +356,18 @@ pre {
     .github-corner:hover .octo-arm {
         animation: none
     }
-
     .github-corner .octo-arm {
         animation: octocat-wave 560ms ease-in-out
     }
-
-    #logo > a > img {
-
+    #logo>a>img {
         height: 60%;
         margin-top: 8%;
         float: left;
     }
-
-    #logo > a > div {
+    #logo>a>div {
         font-size: 18px;
         margin-left: 10px;
     }
-
     .language {
         right: 63px;
     }

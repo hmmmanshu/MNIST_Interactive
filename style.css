@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
 * {
     box-sizing: border-box;
-    transition: .5s;
+    transition: .25s;
     margin: 0;
     padding: 0;
 }
@@ -43,9 +43,9 @@ canvas {
 }
 
 #p5:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 #viz :hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }

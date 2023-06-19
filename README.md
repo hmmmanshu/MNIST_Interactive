@@ -11,5 +11,5 @@ A MNIST predictor with some spice.
 - **Languages** :  Python , Html , JavaScript , CSS
 -  **Accuracy** : 99%
 
-### [Deployment](https://bot-7037.github.io/MNIST_Interactive)
+### [Deployment](https://hmmmanshu.github.io/MNIST_Interactive/)
 ___
